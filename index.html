@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מדריך Claude Code - עזי לוי</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo">AI</div>
+                <div class="brand-info">
+                    <h1>עזי לוי</h1>
+                    <p>מרצה לשימושים פרקטיים ב-AI</p>
+                </div>
+            </div>
+            <nav class="header-nav">
+                <a href="http://wa.me/972544266802" target="_blank" class="whatsapp-link">פנו אלי בוואטסאפ</a>
+                <a href="https://chat.whatsapp.com/LcW2GxWIN3u0VDr8LdsnDD" target="_blank" class="group-btn">הצטרפו לקבוצת עדכונים</a>
+                <a href="https://www.ezylevy.com" target="_blank" class="cta-btn">לאתר שלי</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">מדריך מקיף בעברית</span>
+            <h1>Claude Code & Cowork</h1>
+            <p>המדריך המלא להתקנה, הגדרה ושימוש בכלי ה-AI החזק ביותר לעבודה</p>
+            <div class="hero-tags">
+                <span class="tag">Claude Code CLI</span>
+                <span class="tag">Claude Cowork</span>
+                <span class="tag">Windows</span>
+                <span class="tag">Mac</span>
+                <span class="tag">Skills</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Tabs Navigation -->
+        <div class="tabs-container">
+            <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="prerequisites">
+                    <span class="tab-icon">1</span>
+                    <span class="tab-text">דרישות מקדימות</span>
+                </button>
+                <button class="tab-btn" data-tab="installation">
+                    <span class="tab-icon">2</span>
+                    <span class="tab-text">התקנה + Git</span>
+                </button>
+                <button class="tab-btn" data-tab="settings">
+                    <span class="tab-icon">3</span>
+                    <span class="tab-text">הגדרות</span>
+                </button>
+                <button class="tab-btn" data-tab="skills">
+                    <span class="tab-icon">4</span>
+                    <span class="tab-text">Skills</span>
+                </button>
+                <button class="tab-btn" data-tab="projects">
+                    <span class="tab-icon">5</span>
+                    <span class="tab-text">3 פרויקטים ראשונים</span>
+                </button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tabs-content">
+
+                <!-- Tab 1: Prerequisites -->
+                <div class="tab-panel active" id="prerequisites">
+                    <div class="tab-header">
+                        <h2>דרישות מקדימות</h2>
+                        <p>לפני שמתחילים, וודאו שיש לכם את כל מה שצריך</p>
+                    </div>
+
+                    <!-- CLI vs Cowork Comparison - MAIN SECTION -->
+                    <div class="comparison-section">
+                        <h3 class="section-title">מה ההבדל? CLI לעומת Cowork</h3>
+                        <p class="section-subtitle">שני כלים שונים לצרכים שונים - בחרו את המתאים לכם</p>
+
+                        <div class="comparison-cards">
+                            <!-- Claude Code CLI -->
+                            <div class="comparison-card cli">
+                                <div class="comparison-header">
+                                    <span class="comparison-icon">💻</span>
+                                    <h4>Claude Code (CLI)</h4>
+                                    <span class="comparison-badge">למפתחים</span>
+                                </div>
+                                <div class="comparison-body">
+                                    <p class="comparison-desc">כלי שורת פקודה (Command Line Interface) שעובד בטרמינל. מיועד בעיקר למפתחים ואנשי טכנולוגיה.</p>
+
+                                    <div class="comparison-image">
+                                        <img src="images/cli-terminal.png" alt="Claude Code CLI Terminal" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span>💻</span><p>ממשק הטרמינל של Claude Code</p></div>'">
+                                    </div>
+
+                                    <h5>מתאים ל:</h5>
+                                    <ul class="comparison-list">
+                                        <li>כתיבת קוד ופיתוח</li>
+                                        <li>דיבאג ותיקון באגים</li>
+                                        <li>ניהול פרויקטים טכניים</li>
+                                        <li>עבודה עם Git</li>
+                                        <li>הרצת פקודות מערכת</li>
+                                        <li>אוטומציה של תהליכי פיתוח</li>
+                                    </ul>
+
+                                    <h5>איך עובדים:</h5>
+                                    <ul class="comparison-list how">
+                                        <li>פותחים טרמינל (PowerShell)</li>
+                                        <li>מקלידים פקודות טקסט</li>
+                                        <li>Claude קורא/כותב קבצים</li>
+                                        <li>מריץ פקודות במערכת</li>
+                                    </ul>
+
+                                    <div class="comparison-example">
+                                        <code>claude "צור קומפוננטת React לטופס התחברות"</code>
+                                    </div>
+
+                                    <div class="comparison-requirements">
+                                        <span class="req-icon">🖥️</span>
+                                        <span>Windows 10/11 או Mac/Linux</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Claude Cowork -->
+                            <div class="comparison-card cowork">
+                                <div class="comparison-header">
+                                    <span class="comparison-icon">🎨</span>
+                                    <h4>Claude Cowork</h4>
+                                    <span class="comparison-badge">לכולם</span>
+                                </div>
+                                <div class="comparison-body">
+                                    <p class="comparison-desc">ממשק גרפי (GUI) באפליקציית Desktop. מיועד לכל אחד - לא צריך לדעת לתכנת!</p>
+
+                                    <div class="comparison-image">
+                                        <img src="images/cowork-interface.png" alt="Claude Cowork Interface" onerror="this.parentElement.innerHTML='<div class=\'img-placeholder\'><span>🎨</span><p>ממשק Cowork הגרפי</p></div>'">
+                                    </div>
+
+                                    <h5>מתאים ל:</h5>
+                                    <ul class="comparison-list">
+                                        <li>ארגון קבצים ותיקיות</li>
+                                        <li>ניתוח נתונים ו-Excel</li>
+                                        <li>עיבוד מסמכים</li>
+                                        <li>יצירת דוחות ומצגות</li>
+                                        <li>ניהול הוצאות וקבלות</li>
+                                        <li>משימות יומיומיות</li>
+                                    </ul>
+
+                                    <h5>איך עובדים:</h5>
+                                    <ul class="comparison-list how">
+                                        <li>פותחים אפליקציית Claude Desktop</li>
+                                        <li>בוחרים תיקייה לעבודה</li>
+                                        <li>כותבים מה רוצים בעברית</li>
+                                        <li>Claude עושה את העבודה!</li>
+                                    </ul>
+
+                                    <div class="comparison-example">
+                                        <span>"תסדר את כל הקבלות בתיקייה ותיצור לי אקסל מסודר"</span>
+                                    </div>
+
+                                    <div class="comparison-requirements">
+                                        <span class="req-icon">🍎</span>
+                                        <span>macOS 14.0 ומעלה בלבד</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Decision Helper -->
+                        <div class="decision-helper">
+                            <h4>איזה כלי מתאים לי?</h4>
+                            <div class="decision-grid">
+                                <div class="decision-item">
+                                    <span class="decision-q">אני מפתח/ת תוכנה?</span>
+                                    <span class="decision-a cli">→ Claude Code CLI</span>
+                                </div>
+                                <div class="decision-item">
+                                    <span class="decision-q">אני רוצה לנהל קבצים ומסמכים?</span>
+                                    <span class="decision-a cowork">→ Claude Cowork</span>
+                                </div>
+                                <div class="decision-item">
+                                    <span class="decision-q">יש לי Mac?</span>
+                                    <span class="decision-a both">→ שניהם זמינים!</span>
+                                </div>
+                                <div class="decision-item">
+                                    <span class="decision-q">יש לי Windows?</span>
+                                    <span class="decision-a cli">→ Claude Code CLI</span>
+                                </div>
+                                <div class="decision-item">
+                                    <span class="decision-q">אני לא יודע/ת לתכנת?</span>
+                                    <span class="decision-a cowork">→ Claude Cowork (Mac) או CLI בעברית</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-grid">
+                        <!-- Hardware Requirements -->
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">💻</span>
+                                <h3>דרישות חומרה</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="requirement-item">
+                                    <span class="req-label">Claude Code CLI:</span>
+                                    <span class="req-value">Windows 10/11, Mac, Linux</span>
+                                </div>
+                                <div class="requirement-item">
+                                    <span class="req-label">Claude Cowork:</span>
+                                    <span class="req-value">macOS 14.0+ בלבד</span>
+                                </div>
+                                <div class="requirement-item">
+                                    <span class="req-label">חיבור אינטרנט:</span>
+                                    <span class="req-value">יציב (חובה)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Subscription Requirements -->
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">💳</span>
+                                <h3>דרישות מנוי</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>נדרשת אחת מהאפשרויות הבאות:</p>
+                                <div class="options-list">
+                                    <div class="option recommended">
+                                        <span class="option-badge">מומלץ</span>
+                                        <h4>Claude Pro/Max</h4>
+                                        <p>מנוי מ-$20/חודש - פשוט וקל</p>
+                                    </div>
+                                    <div class="option">
+                                        <h4>API Key</h4>
+                                        <p>תשלום לפי שימוש - שליטה בעלויות</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What You'll Learn -->
+                        <div class="info-card full-width">
+                            <div class="card-header">
+                                <span class="card-icon">✅</span>
+                                <h3>מה נלמד במדריך</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="learn-grid">
+                                    <ul class="check-list success">
+                                        <li>התקנת Claude Code על Windows</li>
+                                        <li>התקנת Claude Cowork על Mac</li>
+                                        <li>התחברות (מנוי או API)</li>
+                                    </ul>
+                                    <ul class="check-list success">
+                                        <li>הגדרות והתאמה אישית</li>
+                                        <li>יצירת Skills מותאמים אישית</li>
+                                        <li>אימון Claude למשימות מורכבות</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Alert Box -->
+                    <div class="alert-box info">
+                        <span class="alert-icon">💡</span>
+                        <div class="alert-content">
+                            <strong>חדשות טובות!</strong>
+                            <p>החל מ-2026, Anthropic שחררו התקנה נטיבית ל-Claude Code. לא צריך יותר Node.js או npm! ההתקנה לוקחת פחות מדקה.</p>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <button class="nav-btn next" onclick="switchTab('installation')">
+                            להתקנה
+                            <span class="arrow">←</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Installation -->
+                <div class="tab-panel" id="installation">
+                    <div class="tab-header">
+                        <h2>התקנה + Git</h2>
+                        <p>התקנת Claude Code ו-Claude Cowork צעד אחר צעד</p>
+                    </div>
+
+                    <!-- Sub-tabs for Installation -->
+                    <div class="sub-tabs-container">
+                        <div class="sub-tabs-nav">
+                            <button class="sub-tab-btn active" data-subtab="install-cli">
+                                <span class="sub-tab-icon">💻</span>
+                                <span class="sub-tab-text">Claude Code CLI</span>
+                                <span class="sub-tab-platforms">Windows / Mac / Linux</span>
+                            </button>
+                            <button class="sub-tab-btn" data-subtab="install-cowork">
+                                <span class="sub-tab-icon">🎨</span>
+                                <span class="sub-tab-text">Claude Cowork</span>
+                                <span class="sub-tab-platforms">Windows / Mac</span>
+                            </button>
+                        </div>
+
+                        <!-- Sub-tab: CLI Installation -->
+                        <div class="sub-tab-panel active" id="install-cli">
+                            <div class="section-divider">
+                                <h3>💻 התקנת Claude Code CLI</h3>
+                                <p class="section-desc">כלי שורת הפקודה למפתחים - עובד על Windows, Mac ו-Linux</p>
+                            </div>
+
+                    <div class="steps-container">
+                        <!-- Step 1: Open PowerShell -->
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>פתיחת PowerShell</h3>
+                                <p>PowerShell הוא הטרמינל של Windows. יש כמה דרכים לפתוח אותו:</p>
+
+                                <div class="method-box">
+                                    <h4>אפשרות 1: חיפוש רגיל</h4>
+                                    <p>לחצו על Start והקלידו "PowerShell", אז Enter.</p>
+                                </div>
+
+                                <div class="method-box recommended">
+                                    <span class="method-badge">מומלץ</span>
+                                    <h4>אפשרות 2: קליק ימני על תיקייה</h4>
+                                    <p>זו הדרך הכי נוחה לעבודה עם Claude Code:</p>
+                                    <ul>
+                                        <li><strong>Windows 11:</strong> קליק ימני על תיקייה → "Open in Terminal"</li>
+                                        <li><strong>Windows 10:</strong> החזיקו Shift + קליק ימני על תיקייה → "Open PowerShell window here"</li>
+                                    </ul>
+                                </div>
+
+                                <div class="screenshot-box">
+                                    <img src="images/powershell-open.png" alt="פתיחת PowerShell" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                    <div class="screenshot-fallback" style="display:none;">
+                                        <div class="terminal-mock">
+                                            <div class="terminal-header">
+                                                <span class="terminal-dot red"></span>
+                                                <span class="terminal-dot yellow"></span>
+                                                <span class="terminal-dot green"></span>
+                                                <span class="terminal-title">PowerShell</span>
+                                            </div>
+                                            <div class="terminal-body">
+                                                <code>PS C:\Users\YourName\MyProject></code>
+                                            </div>
+                                        </div>
+                                        <p class="screenshot-caption">מה תראו - שימו לב לנתיב, זו התיקייה שבה אתם נמצאים</p>
+                                    </div>
+                                </div>
+
+                                <div class="tip-box">
+                                    <span class="tip-icon">💡</span>
+                                    <p><strong>טיפ:</strong> התייחסו לכל תיקייה כפרויקט. פתחו טרמינל על התיקייה, הריצו claude, ותתחילו לעבוד!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Install Claude Code -->
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>התקנת Claude Code</h3>
+                                <p>עכשיו מגיע החלק המרכזי - התקנה בפקודה אחת!</p>
+
+                                <div class="method-box recommended">
+                                    <span class="method-badge">מומלץ</span>
+                                    <h4>אפשרות 1: סקריפט PowerShell</h4>
+                                    <p>העתיקו והדביקו את הפקודה הזו ב-PowerShell:</p>
+                                    <div class="code-block">
+                                        <code>irm https://claude.ai/install.ps1 | iex</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                    <p class="code-explanation">לחצו Enter והמתינו. זה הכל!</p>
+                                    <div class="info-note">
+                                        <strong>מה קורה פה?</strong> irm מוריד את הסקריפט, ו-iex מריץ אותו. הכל אוטומטי!
+                                    </div>
+                                </div>
+
+                                <div class="method-box">
+                                    <h4>אפשרות 2: WinGet</h4>
+                                    <p>אם אתם מעדיפים את מנהל החבילות של Windows:</p>
+                                    <div class="code-block">
+                                        <code>winget install Anthropic.ClaudeCode</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                </div>
+
+                                <div class="screenshot-box">
+                                    <img src="images/install-success.png" alt="התקנה מוצלחת" onerror="this.parentElement.style.display='none';">
+                                </div>
+
+                                <div class="verification-box">
+                                    <h4>וידוא התקנה</h4>
+                                    <p>פתחו PowerShell חדש והקלידו:</p>
+                                    <div class="code-block">
+                                        <code>claude --version</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                    <p>אם מופיע מספר גרסה - ההתקנה הצליחה!</p>
+                                </div>
+
+                                <div class="alert-box warning">
+                                    <span class="alert-icon">⚠️</span>
+                                    <div class="alert-content">
+                                        <strong>שגיאת execution policy?</strong>
+                                        <p>הריצו קודם:</p>
+                                        <div class="code-block small">
+                                            <code>Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned</code>
+                                            <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Login -->
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>התחברות ל-Claude</h3>
+                                <p>יש שתי דרכים להתחבר - בחרו את המתאימה לכם:</p>
+
+                                <div class="method-box recommended">
+                                    <span class="method-badge">מומלץ לרוב המשתמשים</span>
+                                    <h4>אפשרות 1: מנוי Pro/Max</h4>
+                                    <p>אם יש לכם מנוי Claude Pro ($20/חודש) או Max - פשוט התחברו עם החשבון:</p>
+                                    <div class="code-block">
+                                        <code>claude login</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                    <p>ייפתח דפדפן להתחברות. היכנסו עם החשבון הרגיל שלכם וזהו!</p>
+                                </div>
+
+                                <div class="method-box">
+                                    <h4>אפשרות 2: API Key (תשלום לפי שימוש)</h4>
+                                    <ol class="numbered-list">
+                                        <li>היכנסו ל-<a href="https://console.anthropic.com" target="_blank">console.anthropic.com</a></li>
+                                        <li>צרו API Key חדש</li>
+                                        <li>הריצו: <code>claude login --api-key</code></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: First Run -->
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>הרצה ראשונה</h3>
+                                <p>הכל מותקן - בואו נבדוק!</p>
+
+                                <div class="code-block large">
+                                    <code>claude</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                </div>
+
+                                <div class="screenshot-box">
+                                    <img src="images/claude-first-run.png" alt="הרצה ראשונה של Claude" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                    <div class="screenshot-fallback" style="display:none;">
+                                        <div class="terminal-mock dark">
+                                            <div class="terminal-header">
+                                                <span class="terminal-title">Claude Code</span>
+                                            </div>
+                                            <div class="terminal-body">
+                                                <p class="claude-welcome">╭─────────────────────────────────────╮</p>
+                                                <p class="claude-welcome">│  Welcome to Claude Code!           │</p>
+                                                <p class="claude-welcome">│  Type your request in Hebrew       │</p>
+                                                <p class="claude-welcome">│  or English and press Enter.       │</p>
+                                                <p class="claude-welcome">╰─────────────────────────────────────╯</p>
+                                                <p class="claude-prompt">claude> _</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="example-commands">
+                                    <h4>דוגמאות לפקודות:</h4>
+                                    <div class="code-block">
+                                        <code>claude "מה הקבצים בתיקייה הזו?"</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                    <div class="code-block">
+                                        <code>claude "צור קובץ README.md עם תיאור הפרויקט"</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                </div>
+
+                                <div class="success-box">
+                                    <span class="success-icon">✅</span>
+                                    <p><strong>מזל טוב!</strong> התקנתם בהצלחה את Claude Code!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Git Section inside CLI tab -->
+                    <div class="section-divider">
+                        <h3>📊 התקנת Git (אופציונלי)</h3>
+                    </div>
+
+                    <div class="info-card full-width">
+                        <div class="card-content">
+                            <p>Git הוא כלי לניהול גרסאות קוד. Claude Code יכול לעבוד איתו לביצוע commits, יצירת branches ועוד.</p>
+
+                            <div class="method-box">
+                                <h4>התקנת Git על Windows:</h4>
+                                <ol class="numbered-list">
+                                    <li>היכנסו ל-<a href="https://git-scm.com/download/win" target="_blank">git-scm.com/download/win</a></li>
+                                    <li>הורידו והתקינו את הגרסה המתאימה</li>
+                                    <li>וודאו התקנה: <code>git --version</code></li>
+                                </ol>
+                            </div>
+
+                            <div class="method-box">
+                                <h4>הגדרת Git:</h4>
+                                <div class="code-block">
+                                    <code>git config --global user.name "Your Name"</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                </div>
+                                <div class="code-block">
+                                    <code>git config --global user.email "your@email.com"</code>
+                                    <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div><!-- End of CLI sub-tab-panel -->
+
+                        <!-- Sub-tab: Cowork Installation -->
+                        <div class="sub-tab-panel" id="install-cowork">
+                            <div class="section-divider">
+                                <h3>🎨 התקנת Claude Cowork</h3>
+                                <p class="section-desc">ממשק גרפי לכולם - זמין ל-Windows ו-Mac</p>
+                            </div>
+
+                            <!-- Platform Notice -->
+                            <div class="alert-box info platform-notice">
+                                <span class="alert-icon">🖥️</span>
+                                <div class="alert-content">
+                                    <strong>זמין על Windows ו-Mac!</strong>
+                                    <p>Cowork הושק ל-Windows בפברואר 2026 עם כל היכולות של גרסת Mac. נדרש מנוי Pro, Max, Team או Enterprise.</p>
+                                </div>
+                            </div>
+
+                    <div class="steps-container">
+                        <!-- Cowork Step 1 -->
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>הורדת Claude Desktop</h3>
+                                <p>Cowork הוא חלק מאפליקציית Claude Desktop:</p>
+
+                                <div class="download-buttons">
+                                    <a href="https://claude.ai/download" target="_blank" class="download-btn windows">
+                                        <span class="download-icon">🪟</span>
+                                        <span class="download-text">
+                                            <strong>Windows</strong>
+                                            <small>x64 (arm64 לא נתמך ב-Cowork)</small>
+                                        </span>
+                                    </a>
+                                    <a href="https://claude.ai/download" target="_blank" class="download-btn mac">
+                                        <span class="download-icon">🍎</span>
+                                        <span class="download-text">
+                                            <strong>macOS</strong>
+                                            <small>Universal (Intel & Apple Silicon)</small>
+                                        </span>
+                                    </a>
+                                </div>
+
+                                <ol class="numbered-list">
+                                    <li>היכנסו ל-<a href="https://claude.ai/download" target="_blank">claude.ai/download</a></li>
+                                    <li>הורידו את הגרסה המתאימה למערכת ההפעלה שלכם</li>
+                                    <li>התקינו והיכנסו עם חשבון Claude Pro/Max/Team/Enterprise</li>
+                                </ol>
+
+                                <div class="alert-box warning">
+                                    <span class="alert-icon">⚠️</span>
+                                    <div class="alert-content">
+                                        <strong>שימו לב:</strong> Cowork דורש מנוי בתשלום. לא זמין בחשבון חינמי או באפליקציית Web/Mobile.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cowork Step 2 -->
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>פתיחת Cowork</h3>
+                                <p>פתחו את אפליקציית Claude Desktop. בחלק העליון תראו שלוש לשוניות:</p>
+
+                                <div class="screenshot-box large">
+                                    <div class="cowork-mock-accurate">
+                                        <div class="mac-window">
+                                            <div class="mac-titlebar">
+                                                <div class="mac-buttons">
+                                                    <span class="mac-btn close"></span>
+                                                    <span class="mac-btn minimize"></span>
+                                                    <span class="mac-btn maximize"></span>
+                                                </div>
+                                                <div class="mac-tabs-container">
+                                                    <span class="mac-tab">Chat</span>
+                                                    <span class="mac-tab active">Cowork</span>
+                                                    <span class="mac-tab">Code</span>
+                                                </div>
+                                            </div>
+                                            <div class="cowork-layout">
+                                                <div class="cowork-sidebar-accurate">
+                                                    <div class="sidebar-item new-task">+ New task</div>
+                                                    <div class="sidebar-section">Recents</div>
+                                                    <div class="sidebar-item">Understand project structure and...</div>
+                                                    <div class="sidebar-item">Create viral post with promo code</div>
+                                                    <div class="sidebar-item">Video content orchestration syste...</div>
+                                                    <div class="sidebar-item">Organize and summarize expense...</div>
+                                                    <div class="sidebar-item">Organize 2025 expense files</div>
+                                                    <div class="sidebar-item">Onboarding new client to project</div>
+                                                    <div class="sidebar-item" dir="rtl">סיכום הפגישה היום</div>
+                                                    <div class="sidebar-divider"></div>
+                                                    <div class="sidebar-item">Project Overview and Introduction</div>
+                                                    <div class="sidebar-user">
+                                                        <div class="user-avatar">MG</div>
+                                                        <span>Maxim Gomberg</span>
+                                                    </div>
+                                                </div>
+                                                <div class="cowork-main-accurate">
+                                                    <div class="cowork-welcome">
+                                                        <span class="welcome-icon">✨</span>
+                                                        <h3>Let's knock something off your list</h3>
+                                                        <div class="cowork-notice">
+                                                            <span class="notice-icon">⚠️</span>
+                                                            Cowork is an early research preview. New improvements ship frequently. Learn more or give us feedback.
+                                                        </div>
+                                                    </div>
+                                                    <div class="quick-actions">
+                                                        <button class="quick-btn">📄 Create a file</button>
+                                                        <button class="quick-btn">📊 Crunch data</button>
+                                                        <button class="quick-btn">✨ Make a prototype</button>
+                                                        <button class="quick-btn">🗂️ Organize files</button>
+                                                        <button class="quick-btn">📅 Prep for a meeting</button>
+                                                        <button class="quick-btn">🔌 Customize with plugins</button>
+                                                    </div>
+                                                    <div class="cowork-input-area">
+                                                        <input type="text" placeholder="How can I help you today?" disabled class="cowork-input">
+                                                        <div class="input-options">
+                                                            <button class="folder-btn">📁 Work in a folder ▾</button>
+                                                            <span class="model-label">Opus 4.5 ▾</span>
+                                                            <button class="go-btn">Let's go →</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="screenshot-caption">מסך הבית של Cowork - שימו לב ללשוניות Chat, Cowork, Code בחלק העליון</p>
+                                </div>
+
+                                <p>לחצו על הלשונית <strong>Cowork</strong> כדי לעבור למצב עבודה.</p>
+                            </div>
+                        </div>
+
+                        <!-- Cowork Step 3 -->
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>בחירת תיקייה לעבודה</h3>
+                                <p>בתחתית המסך תראו כפתור <strong>"Work in a folder"</strong>. לחצו עליו כדי לבחור תיקייה שבה Claude יעבוד.</p>
+
+                                <div class="screenshot-box">
+                                    <div class="folder-select-mock-accurate">
+                                        <div class="folder-dropdown">
+                                            <div class="dropdown-header">Recent</div>
+                                            <div class="folder-list-accurate">
+                                                <div class="folder-row">
+                                                    <span class="folder-icon">📁</span>
+                                                    <div class="folder-info">
+                                                        <span class="folder-name">Desktop</span>
+                                                        <span class="folder-path">/Users/maxim/Desktop</span>
+                                                    </div>
+                                                </div>
+                                                <div class="folder-row selected">
+                                                    <span class="folder-icon user-icon">👤</span>
+                                                    <div class="folder-info">
+                                                        <span class="folder-name">CoworkProjects</span>
+                                                        <span class="folder-path">/Users/maxim/Desktop/CoworkProjects</span>
+                                                    </div>
+                                                </div>
+                                                <div class="folder-row">
+                                                    <span class="folder-icon">📁</span>
+                                                    <div class="folder-info">
+                                                        <span class="folder-name">EZ-mixers</span>
+                                                        <span class="folder-path">/Users/maxim/Desktop/clients/EZ-mixers</span>
+                                                    </div>
+                                                </div>
+                                                <div class="folder-row">
+                                                    <span class="folder-icon">📁</span>
+                                                    <div class="folder-info">
+                                                        <span class="folder-name">Downloads</span>
+                                                        <span class="folder-path">/Users/maxim/Downloads</span>
+                                                    </div>
+                                                </div>
+                                                <div class="folder-row">
+                                                    <span class="folder-icon">📁</span>
+                                                    <div class="folder-info">
+                                                        <span class="folder-name">הפרויקט שלי</span>
+                                                        <span class="folder-path">/Users/maxim/Documents/הפרויקט שלי</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="screenshot-caption">בחירת תיקייה - רשימת התיקיות האחרונות מופיעה</p>
+                                </div>
+
+                                <div class="tip-box">
+                                    <span class="tip-icon">💡</span>
+                                    <p><strong>טיפ חשוב:</strong> צרו תיקייה ייעודית לעבודה עם Cowork, למשל "CoworkProjects". <strong>אל תיתנו גישה לתיקיית הבית או Documents שלמה!</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cowork Step 4 -->
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>אישור הרשאות</h3>
+                                <p>אחרי שבחרתם תיקייה, תופיע חלונית הרשאות. Claude מבקש אישור לקרוא, לערוך ולמחוק קבצים.</p>
+
+                                <div class="screenshot-box">
+                                    <div class="permissions-mock-accurate">
+                                        <div class="permissions-dialog">
+                                            <h4>Allow Claude to change files in<br>"CoworkProjects"?</h4>
+                                            <p class="permissions-desc">This includes all files and subfolders. Claude will be able to read, edit, and permanently delete—and may share file contents with third-party tools it connects to. Be careful about exposing sensitive information.</p>
+                                            <div class="permissions-buttons-accurate">
+                                                <button class="perm-btn-accurate cancel">Cancel</button>
+                                                <button class="perm-btn-accurate always">Always Allow</button>
+                                                <button class="perm-btn-accurate allow">Allow</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="screenshot-caption">חלונית הרשאות - Claude מבקש גישה לקבצים</p>
+                                </div>
+
+                                <div class="permissions-box">
+                                    <h4>שלוש אפשרויות:</h4>
+                                    <div class="permission-options">
+                                        <div class="perm-option">
+                                            <span class="perm-name">Cancel</span>
+                                            <span class="perm-desc">ביטול</span>
+                                        </div>
+                                        <div class="perm-option recommended">
+                                            <span class="perm-badge">מומלץ</span>
+                                            <span class="perm-name">Allow Always</span>
+                                            <span class="perm-desc">אישור קבוע לתיקייה זו</span>
+                                        </div>
+                                        <div class="perm-option">
+                                            <span class="perm-name">Allow</span>
+                                            <span class="perm-desc">אישור חד-פעמי</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cowork Step 5 -->
+                        <div class="step-card">
+                            <div class="step-number">5</div>
+                            <div class="step-content">
+                                <h3>תיאור המשימה וקבלת תוצאות</h3>
+                                <p>כתבו <strong>בעברית</strong> מה אתם רוצים ש-Claude יעשה:</p>
+
+                                <div class="example-prompt large">
+                                    "תסדר ותמיין את ההוצאות בתיקייה ותיצור לי קובץ אקסל עם סיכום מלא"
+                                </div>
+
+                                <div class="screenshot-box large">
+                                    <div class="results-mock-accurate">
+                                        <div class="mac-window results-window">
+                                            <div class="mac-titlebar dark">
+                                                <div class="mac-buttons">
+                                                    <span class="mac-btn close"></span>
+                                                    <span class="mac-btn minimize"></span>
+                                                    <span class="mac-btn maximize"></span>
+                                                </div>
+                                                <div class="mac-tabs-container">
+                                                    <span class="mac-tab">Chat</span>
+                                                    <span class="mac-tab active">Cowork</span>
+                                                    <span class="mac-tab">Code</span>
+                                                </div>
+                                            </div>
+                                            <div class="results-layout">
+                                                <div class="results-sidebar">
+                                                    <div class="task-title-sidebar">Organize and summarize expense report ▾</div>
+                                                    <div class="results-table">
+                                                        <div class="table-header">
+                                                            <span>קטגוריה</span>
+                                                            <span>סכום</span>
+                                                            <span>סיכום</span>
+                                                        </div>
+                                                        <div class="table-row"><span>אוכל ושתייה</span><span>—</span><span>—</span></div>
+                                                        <div class="table-row"><span>ציוד משרדי/טכנולוגיה</span><span>—</span><span>—</span></div>
+                                                        <div class="table-row"><span>הכשרות/קורסים</span><span>—</span><span>—</span></div>
+                                                        <div class="table-row"><span>רכישות/אחר</span><span>—</span><span>—</span></div>
+                                                        <div class="table-row highlight"><span>סה"כ הוצאות ומסים</span><span>—</span><span>—</span></div>
+                                                    </div>
+                                                    <div class="results-summary-box">
+                                                        <p><strong>סיכום ההוצאות - המלצות והערות</strong></p>
+                                                        <p>• נותחו 238 רשומות הוצאות לפי קטגוריות: אוכל, תחבורה, ציוד</p>
+                                                        <p>• דו"ח הסיכום הוא קובץ אקסל מפורט - 30 דפים עם ביאורים</p>
+                                                        <p>• נוצר קובץ Expenses 01.01.2025-28.04.2025</p>
+                                                    </div>
+                                                    <div class="excel-output">
+                                                        <span class="excel-icon">📊</span>
+                                                        <span class="excel-name">מאורגן+סיכום.xlsx</span>
+                                                        <span class="excel-size">Spreadsheet • 42.98 KB</span>
+                                                        <button class="open-excel-btn">Open in Microsoft Excel</button>
+                                                    </div>
+                                                </div>
+                                                <div class="results-progress">
+                                                    <div class="progress-header">Progress</div>
+                                                    <div class="progress-item done">✓ Read and analyze expense CSV</div>
+                                                    <div class="progress-item done">✓ Categorize all transactions</div>
+                                                    <div class="progress-item done">✓ Create summary tables and charts</div>
+                                                    <div class="progress-item done">✓ Generate final Excel report</div>
+                                                    <div class="progress-item done">✓ Write Hebrew summary</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p class="screenshot-caption">תוצאות - דוח הוצאות מסודר עם קובץ Excel מוכן. Claude ניתח 238 רשומות!</p>
+                                </div>
+
+                                <div class="success-box">
+                                    <span class="success-icon">✅</span>
+                                    <p><strong>מזל טוב!</strong> אתם מוכנים לעבוד עם Claude Cowork!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        </div><!-- End of Cowork sub-tab-panel -->
+
+                    </div><!-- End of sub-tabs-container -->
+
+                    <div class="nav-buttons">
+                        <button class="nav-btn prev" onclick="switchTab('prerequisites')">
+                            <span class="arrow">→</span>
+                            לדרישות מקדימות
+                        </button>
+                        <button class="nav-btn next" onclick="switchTab('settings')">
+                            להגדרות
+                            <span class="arrow">←</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Settings -->
+                <div class="tab-panel" id="settings">
+                    <div class="tab-header">
+                        <h2>הגדרות</h2>
+                        <p>התאמה אישית, קונפיגורציה ואימון Claude</p>
+                    </div>
+
+                    <div class="content-grid">
+                        <!-- Claude Code Settings -->
+                        <div class="section-divider full-width">
+                            <h3>⚙️ הגדרות Claude Code CLI</h3>
+                        </div>
+
+                        <!-- Basic Commands -->
+                        <div class="info-card full-width">
+                            <div class="card-header">
+                                <span class="card-icon">⚙️</span>
+                                <h3>פקודות הגדרה בסיסיות</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="commands-grid">
+                                    <div class="command-item">
+                                        <div class="code-block small">
+                                            <code>claude config</code>
+                                            <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                        </div>
+                                        <p>פתיחת תפריט הגדרות</p>
+                                    </div>
+                                    <div class="command-item">
+                                        <div class="code-block small">
+                                            <code>claude auth status</code>
+                                            <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                        </div>
+                                        <p>בדיקת סטטוס החיבור</p>
+                                    </div>
+                                    <div class="command-item">
+                                        <div class="code-block small">
+                                            <code>claude --help</code>
+                                            <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                        </div>
+                                        <p>הצגת עזרה</p>
+                                    </div>
+                                    <div class="command-item">
+                                        <div class="code-block small">
+                                            <code>claude --version</code>
+                                            <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                        </div>
+                                        <p>הצגת גרסה</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CLAUDE.md File - Training Claude -->
+                        <div class="info-card full-width highlight-card">
+                            <div class="card-header">
+                                <span class="card-icon">🧠</span>
+                                <h3>אימון Claude עם קובץ CLAUDE.md</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>קובץ <code>CLAUDE.md</code> הוא הדרך <strong>הכי חשובה</strong> לאמן את Claude להבין את הפרויקט שלכם ולעבוד בצורה מדויקת יותר.</p>
+
+                                <div class="training-section">
+                                    <h4>למה זה חשוב?</h4>
+                                    <ul class="feature-list">
+                                        <li>Claude קורא את הקובץ <strong>אוטומטית</strong> בכל פעם שמפעילים אותו בתיקייה</li>
+                                        <li>הוא מבין את ההקשר, הסגנון והדרישות שלכם</li>
+                                        <li>חוסך לכם חזרות על הנחיות</li>
+                                        <li>מבטיח תוצאות עקביות</li>
+                                    </ul>
+                                </div>
+
+                                <div class="training-section">
+                                    <h4>איך ליצור קובץ CLAUDE.md?</h4>
+                                    <p>צרו קובץ בשם <code>CLAUDE.md</code> בשורש (root) של תיקיית הפרויקט:</p>
+
+                                    <div class="code-block multi-line">
+                                        <pre># שם הפרויקט
+
+## תיאור
+תיאור קצר של הפרויקט ומטרתו.
+
+## טכנולוגיות
+- React 18
+- TypeScript
+- Tailwind CSS
+
+## מבנה התיקיות
+- /src - קוד המקור
+- /components - קומפוננטות React
+- /api - קריאות API
+
+## כללים והנחיות
+- כתוב קוד נקי ומתועד
+- השתמש בעברית בתגובות ובטקסטים
+- עקוב אחרי קונבנציות הפרויקט
+- אל תשנה קבצי קונפיגורציה בלי לשאול
+
+## סגנון קוד
+- השתמש בפונקציות קטנות וממוקדות
+- הוסף תיעוד לפונקציות מורכבות
+- עקוב אחרי ESLint rules
+
+## דברים שחשוב לדעת
+- הפרויקט משתמש ב-API חיצוני בכתובת...
+- יש לבדוק תאימות ל-IE11
+- הנתונים מגיעים בפורמט...</pre>
+                                    </div>
+                                </div>
+
+                                <div class="training-section">
+                                    <h4>טיפים לכתיבת CLAUDE.md אפקטיבי:</h4>
+                                    <div class="tips-grid compact">
+                                        <div class="tip-item">
+                                            <h5>✓ היו ספציפיים</h5>
+                                            <p>במקום "כתוב קוד טוב" כתבו "השתמש ב-TypeScript strict mode"</p>
+                                        </div>
+                                        <div class="tip-item">
+                                            <h5>✓ תנו דוגמאות</h5>
+                                            <p>הוסיפו דוגמאות לסגנון הקוד המועדף</p>
+                                        </div>
+                                        <div class="tip-item">
+                                            <h5>✓ הגדירו גבולות</h5>
+                                            <p>ציינו מה Claude לא צריך לעשות</p>
+                                        </div>
+                                        <div class="tip-item">
+                                            <h5>✓ עדכנו תמיד</h5>
+                                            <p>כשהפרויקט משתנה - עדכנו את הקובץ</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Training for Complex Work -->
+                        <div class="info-card full-width highlight-card blue">
+                            <div class="card-header">
+                                <span class="card-icon">🎓</span>
+                                <h3>אימון Claude לעבודה מורכבת</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>כשאתם צריכים ש-Claude יבצע משימות מורכבות באופן עקבי, השתמשו בשיטות הבאות:</p>
+
+                                <div class="training-method">
+                                    <h4>שיטה 1: הנחיות מפורטות בשיחה</h4>
+                                    <p>פתחו את השיחה עם הקשר מלא:</p>
+                                    <div class="example-prompt large">
+"אני עובד על פרויקט e-commerce ב-React.
+הסגנון: קומפוננטות פונקציונליות, TypeScript, Tailwind.
+כשאני מבקש קומפוננטה חדשה:
+1. צור קובץ נפרד ב-/components
+2. הוסף types בקובץ נפרד
+3. כתוב 2-3 בדיקות בסיסיות
+4. עדכן את index.ts עם ה-export
+
+עכשיו בוא ניצור קומפוננטת ProductCard"
+                                    </div>
+                                </div>
+
+                                <div class="training-method">
+                                    <h4>שיטה 2: קבצי Template</h4>
+                                    <p>צרו קבצי דוגמה שClaud ילמד מהם:</p>
+                                    <div class="code-block multi-line">
+                                        <pre>// TEMPLATE_COMPONENT.tsx
+// זהו קובץ לדוגמה - Claude ישתמש בו כבסיס
+
+import React from 'react';
+import { ComponentProps } from './types';
+import styles from './Component.module.css';
+
+/**
+ * תיאור הקומפוננטה
+ * @param props - הפרופס של הקומפוננטה
+ */
+export const Component: React.FC<ComponentProps> = ({
+  title,
+  children
+}) => {
+  return (
+    <div className={styles.container}>
+      <h2>{title}</h2>
+      {children}
+    </div>
+  );
+};</pre>
+                                    </div>
+                                    <p>ואז בקשו מ-Claude: "צור קומפוננטה חדשה לפי ה-Template שבתיקייה"</p>
+                                </div>
+
+                                <div class="training-method">
+                                    <h4>שיטה 3: Iterative Feedback</h4>
+                                    <p>תקנו את Claude כשהוא טועה - הוא לומד מזה:</p>
+                                    <div class="feedback-example">
+                                        <div class="feedback-item wrong">
+                                            <span class="feedback-label">❌ Claude עשה:</span>
+                                            <code>function getData() { ... }</code>
+                                        </div>
+                                        <div class="feedback-item correct">
+                                            <span class="feedback-label">✓ אתם מתקנים:</span>
+                                            <p>"בפרויקט הזה אנחנו משתמשים ב-arrow functions. שנה ל: const getData = () => { ... }"</p>
+                                        </div>
+                                        <div class="feedback-item result">
+                                            <span class="feedback-label">🎯 התוצאה:</span>
+                                            <p>Claude יזכור וישתמש ב-arrow functions בהמשך השיחה</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cowork Connectors -->
+                        <div class="section-divider full-width">
+                            <h3>🔌 הגדרות Claude Cowork</h3>
+                        </div>
+
+                        <div class="info-card full-width">
+                            <div class="card-header">
+                                <span class="card-icon">🔌</span>
+                                <h3>חיבורים חיצוניים (Connectors)</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Cowork יכול להתחבר לשירותים חיצוניים כדי להרחיב את היכולות:</p>
+
+                                <div class="screenshot-box">
+                                    <img src="images/cowork-connectors.png" alt="Connectors" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                    <div class="screenshot-fallback" style="display:none;">
+                                        <div class="connectors-grid">
+                                            <div class="connector-item">
+                                                <span class="connector-icon">📁</span>
+                                                <h4>Google Drive</h4>
+                                                <p>חיפוש וגישה לקבצים בענן</p>
+                                            </div>
+                                            <div class="connector-item">
+                                                <span class="connector-icon">📧</span>
+                                                <h4>Gmail</h4>
+                                                <p>חיפוש במיילים</p>
+                                            </div>
+                                            <div class="connector-item">
+                                                <span class="connector-icon">📅</span>
+                                                <h4>Calendar</h4>
+                                                <p>גישה ליומן</p>
+                                            </div>
+                                            <div class="connector-item">
+                                                <span class="connector-icon">🌐</span>
+                                                <h4>Chrome</h4>
+                                                <p>גלישה ופעולות באתרים</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p>להפעלת Connector: לחצו על כפתור ה-"+" → Connectors → בחרו את השירות.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Troubleshooting -->
+                    <div class="section-divider">
+                        <h3>🔧 פתרון בעיות נפוצות</h3>
+                    </div>
+
+                    <div class="troubleshooting-grid">
+                        <div class="trouble-item">
+                            <div class="trouble-error">"command not found"</div>
+                            <div class="trouble-solution">סגרו ופתחו מחדש את PowerShell. אם לא עוזר - התקינו מחדש.</div>
+                        </div>
+                        <div class="trouble-item">
+                            <div class="trouble-error">"execution policy"</div>
+                            <div class="trouble-solution">הריצו: <code>Set-ExecutionPolicy RemoteSigned</code></div>
+                        </div>
+                        <div class="trouble-item">
+                            <div class="trouble-error">"permission denied"</div>
+                            <div class="trouble-solution">פתחו PowerShell כ-Administrator.</div>
+                        </div>
+                        <div class="trouble-item">
+                            <div class="trouble-error">"login failed"</div>
+                            <div class="trouble-solution">בדקו חיבור אינטרנט ונסו שוב.</div>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <button class="nav-btn prev" onclick="switchTab('installation')">
+                            <span class="arrow">→</span>
+                            להתקנה
+                        </button>
+                        <button class="nav-btn next" onclick="switchTab('skills')">
+                            ל-Skills
+                            <span class="arrow">←</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Skills -->
+                <div class="tab-panel" id="skills">
+                    <div class="tab-header">
+                        <h2>Skills - כישורים ויכולות</h2>
+                        <p>פקודות מובנות ויצירת Skills מותאמים אישית</p>
+                    </div>
+
+                    <div class="content-grid">
+                        <!-- What are Skills -->
+                        <div class="info-card full-width">
+                            <div class="card-header">
+                                <span class="card-icon">🎯</span>
+                                <h3>מה זה Skills?</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Skills הם פקודות מיוחדות שמרחיבות את היכולות של Claude Code. הם מופעלים עם <code>/</code> (סלאש) ומאפשרים פעולות מתקדמות ואוטומטיות.</p>
+                                <div class="skills-types">
+                                    <div class="skill-type">
+                                        <h4>Skills מובנים</h4>
+                                        <p>פקודות שמגיעות עם Claude Code</p>
+                                    </div>
+                                    <div class="skill-type">
+                                        <h4>Skills מותאמים אישית</h4>
+                                        <p>פקודות שאתם יוצרים בעצמכם!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Built-in Skills -->
+                        <div class="info-card full-width">
+                            <div class="card-header">
+                                <span class="card-icon">🔧</span>
+                                <h3>פקודות מובנות</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <div class="skill-command">/help</div>
+                                        <p>הצגת עזרה ורשימת פקודות</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-command">/clear</div>
+                                        <p>ניקוי היסטוריית השיחה</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-command">/compact</div>
+                                        <p>דחיסת ההקשר לחיסכון</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-command">/config</div>
+                                        <p>פתיחת הגדרות</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-command">/cost</div>
+                                        <p>הצגת עלות השיחה</p>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-command">/doctor</div>
+                                        <p>בדיקת בריאות ההתקנה</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creating Custom Skills Section -->
+                    <div class="section-divider">
+                        <h3>🛠️ יצירת Skill מותאם אישית מפרוצדורה</h3>
+                    </div>
+
+                    <div class="custom-skill-guide">
+                        <div class="info-card full-width highlight-card green">
+                            <div class="card-header">
+                                <span class="card-icon">✨</span>
+                                <h3>למה ליצור Skill משלכם?</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>כשיש לכם תהליך שאתם חוזרים עליו שוב ושוב, הפכו אותו ל-Skill! במקום להסביר כל פעם מחדש, פשוט תקלידו <code>/my-skill</code> וזהו.</p>
+                                <div class="skill-benefits">
+                                    <div class="benefit">
+                                        <span class="benefit-icon">⏱️</span>
+                                        <p>חוסך זמן</p>
+                                    </div>
+                                    <div class="benefit">
+                                        <span class="benefit-icon">🎯</span>
+                                        <p>תוצאות עקביות</p>
+                                    </div>
+                                    <div class="benefit">
+                                        <span class="benefit-icon">🔄</span>
+                                        <p>קל לשתף עם אחרים</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step by Step Guide -->
+                        <div class="steps-container skill-steps">
+                            <div class="step-card">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3>זהו את הפרוצדורה</h3>
+                                    <p>תחשבו על תהליך שאתם עושים הרבה. לדוגמה:</p>
+                                    <div class="procedure-example">
+                                        <h4>דוגמה: יצירת קומפוננטת React חדשה</h4>
+                                        <ol>
+                                            <li>ליצור תיקייה בשם הקומפוננטה</li>
+                                            <li>ליצור קובץ index.tsx עם הקוד</li>
+                                            <li>ליצור קובץ styles.module.css</li>
+                                            <li>ליצור קובץ types.ts</li>
+                                            <li>ליצור קובץ Component.test.tsx</li>
+                                            <li>לעדכן את ה-exports</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3>צרו תיקיית Skills</h3>
+                                    <p>צרו את המבנה הבא בפרויקט שלכם:</p>
+                                    <div class="folder-structure">
+                                        <pre>
+your-project/
+├── .claude/
+│   └── skills/
+│       └── create-component.md
+├── src/
+├── CLAUDE.md
+└── package.json</pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3>כתבו את קובץ ה-Skill</h3>
+                                    <p>צרו קובץ <code>create-component.md</code> עם ההנחיות:</p>
+                                    <div class="code-block multi-line">
+                                        <pre># Skill: create-component
+
+## תיאור
+יוצר קומפוננטת React חדשה עם כל הקבצים הנדרשים.
+
+## פרמטרים
+- name: שם הקומפוננטה (חובה)
+- path: נתיב יחסי (ברירת מחדל: src/components)
+
+## שלבים לביצוע
+
+1. **צור תיקייה** בשם `{name}` בנתיב `{path}/{name}/`
+
+2. **צור קובץ index.tsx** עם הקוד:
+```tsx
+import React from 'react';
+import styles from './{name}.module.css';
+import { {name}Props } from './types';
+
+export const {name}: React.FC<{name}Props> = ({ children }) => {
+  return (
+    <div className={styles.container}>
+      {children}
+    </div>
+  );
+};
+
+export default {name};
+```
+
+3. **צור קובץ types.ts**:
+```ts
+export interface {name}Props {
+  children?: React.ReactNode;
+}
+```
+
+4. **צור קובץ {name}.module.css**:
+```css
+.container {
+  /* styles here */
+}
+```
+
+5. **צור קובץ {name}.test.tsx**:
+```tsx
+import { render, screen } from '@testing-library/react';
+import { {name} } from './index';
+
+describe('{name}', () => {
+  it('renders children', () => {
+    render(<{name}>Test</{name}>);
+    expect(screen.getByText('Test')).toBeInTheDocument();
+  });
+});
+```
+
+6. **עדכן exports** בקובץ src/components/index.ts
+
+## פלט
+הודעה על יצירה מוצלחת עם רשימת הקבצים שנוצרו.</pre>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="step-card">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3>השתמשו ב-Skill!</h3>
+                                    <p>עכשיו אפשר להפעיל את ה-Skill בכל שיחה:</p>
+                                    <div class="code-block large">
+                                        <code>/create-component Button</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                    <p>או עם נתיב מותאם:</p>
+                                    <div class="code-block">
+                                        <code>/create-component ProductCard path=src/features/shop</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                    <div class="success-box">
+                                        <span class="success-icon">✅</span>
+                                        <p>Claude יבצע את כל 6 השלבים אוטומטית ויצור את כל הקבצים!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- More Skill Examples -->
+                        <div class="info-card full-width">
+                            <div class="card-header">
+                                <span class="card-icon">💡</span>
+                                <h3>רעיונות ל-Skills שימושיים</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="skill-ideas-grid">
+                                    <div class="skill-idea">
+                                        <h4>/create-api-endpoint</h4>
+                                        <p>יוצר route, controller, validation ו-tests</p>
+                                    </div>
+                                    <div class="skill-idea">
+                                        <h4>/add-feature</h4>
+                                        <p>יוצר את כל הקבצים ל-feature חדש</p>
+                                    </div>
+                                    <div class="skill-idea">
+                                        <h4>/document-function</h4>
+                                        <p>מוסיף JSDoc מפורט לפונקציה</p>
+                                    </div>
+                                    <div class="skill-idea">
+                                        <h4>/create-test</h4>
+                                        <p>יוצר קובץ בדיקות מקיף</p>
+                                    </div>
+                                    <div class="skill-idea">
+                                        <h4>/refactor-to-hooks</h4>
+                                        <p>ממיר class component ל-hooks</p>
+                                    </div>
+                                    <div class="skill-idea">
+                                        <h4>/setup-ci</h4>
+                                        <p>יוצר קבצי GitHub Actions</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Easy Way: Ask Claude to Remember -->
+                        <div class="info-card full-width highlight-card purple">
+                            <div class="card-header">
+                                <span class="card-icon">🧠</span>
+                                <h3>הדרך הקלה: בקשו מ-Claude לזכור ולשמור כ-Skill!</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>במקום ליצור את קובץ ה-Skill ידנית, אפשר פשוט <strong>לבקש מ-Claude לעשות את זה בשבילכם!</strong></p>
+
+                                <div class="easy-skill-steps">
+                                    <div class="easy-step">
+                                        <span class="easy-step-num">1</span>
+                                        <div class="easy-step-content">
+                                            <h4>בצעו את התהליך פעם אחת</h4>
+                                            <p>עבדו עם Claude על המשימה כרגיל. לדוגמה, בקשו ממנו ליצור קומפוננטה:</p>
+                                            <div class="code-block">
+                                                <code>"צור לי קומפוננטת React בשם Button עם TypeScript, CSS modules וטסטים"</code>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="easy-step">
+                                        <span class="easy-step-num">2</span>
+                                        <div class="easy-step-content">
+                                            <h4>בקשו מ-Claude לזכור את התהליך</h4>
+                                            <p>אחרי שהתהליך הושלם בהצלחה, פשוט אמרו:</p>
+                                            <div class="code-block highlight-code">
+                                                <code>"תזכור את התהליך הזה ותשמור אותו כ-Skill בשם create-component"</code>
+                                                <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                            </div>
+                                            <p>או בגרסה מפורטת יותר:</p>
+                                            <div class="code-block">
+                                                <code>"מעולה! עכשיו צור skill file מהתהליך הזה שיהיה זמין בפקודה /create-component. שמור אותו ב-.claude/skills/create-component.md"</code>
+                                                <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="easy-step">
+                                        <span class="easy-step-num">3</span>
+                                        <div class="easy-step-content">
+                                            <h4>Claude ייצור את הקובץ אוטומטית!</h4>
+                                            <p>Claude יכתוב את קובץ ה-Skill בפורמט הנכון, עם כל ההנחיות והפרמטרים. מעכשיו תוכלו להשתמש ב:</p>
+                                            <div class="code-block large">
+                                                <code>/create-component MyNewComponent</code>
+                                                <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tip-box">
+                                    <span class="tip-icon">💡</span>
+                                    <p><strong>טיפ מתקדם:</strong> אפשר גם לבקש מ-Claude לשפר skill קיים: "תשפר את ה-skill הזה ותוסיף אפשרות לבחור בין CSS modules ל-Tailwind"</p>
+                                </div>
+
+                                <div class="example-prompts">
+                                    <h4>עוד דוגמאות לבקשות:</h4>
+                                    <ul class="prompt-list">
+                                        <li>"תזכור איך יצרנו את ה-API endpoint ותשמור כ-skill"</li>
+                                        <li>"שמור את תהליך ה-refactoring הזה כ-skill לשימוש עתידי"</li>
+                                        <li>"צור skill מהמשימה שעשינו עכשיו, תקרא לו /optimize-images"</li>
+                                        <li>"תיעד את כל השלבים שעשינו ותשמור כ-skill ב-.claude/skills/"</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cowork Skills -->
+                    <div class="section-divider">
+                        <h3>🎨 יכולות Cowork</h3>
+                    </div>
+
+                    <div class="content-grid">
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">📊</span>
+                                <h3>ניתוח נתונים</h3>
+                            </div>
+                            <div class="card-content">
+                                <ul class="feature-list">
+                                    <li>ניתוח קבצי Excel ו-CSV</li>
+                                    <li>יצירת סיכומים וגרפים</li>
+                                    <li>מיון וסינון נתונים</li>
+                                    <li>חישובים מורכבים</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">📝</span>
+                                <h3>יצירת מסמכים</h3>
+                            </div>
+                            <div class="card-content">
+                                <ul class="feature-list">
+                                    <li>כתיבת דוחות</li>
+                                    <li>יצירת מצגות PowerPoint</li>
+                                    <li>עיצוב מסמכים</li>
+                                    <li>סיכום תכנים</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">🗂️</span>
+                                <h3>ארגון קבצים</h3>
+                            </div>
+                            <div class="card-content">
+                                <ul class="feature-list">
+                                    <li>מיון לפי תאריך/סוג/נושא</li>
+                                    <li>שינוי שמות אוטומטי</li>
+                                    <li>ארגון תיקיות</li>
+                                    <li>איחוד קבצים</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="card-header">
+                                <span class="card-icon">🧾</span>
+                                <h3>עיבוד קבלות</h3>
+                            </div>
+                            <div class="card-content">
+                                <ul class="feature-list">
+                                    <li>קריאת תמונות קבלות</li>
+                                    <li>חילוץ נתונים</li>
+                                    <li>יצירת דוחות הוצאות</li>
+                                    <li>קטגוריזציה אוטומטית</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <button class="nav-btn prev" onclick="switchTab('settings')">
+                            <span class="arrow">→</span>
+                            להגדרות
+                        </button>
+                        <button class="nav-btn next" onclick="switchTab('projects')">
+                            לפרויקטים
+                            <span class="arrow">←</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Tab 5: Projects -->
+                <div class="tab-panel" id="projects">
+                    <div class="tab-header">
+                        <h2>3 פרויקטים ראשונים</h2>
+                        <p>התחילו לעבוד עם Claude Code ו-Cowork דרך פרויקטים מעשיים</p>
+                    </div>
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-number">פרויקט 1</span>
+                            <span class="project-difficulty easy">קל</span>
+                            <span class="project-tool cli">Claude Code CLI</span>
+                        </div>
+                        <h3>יצירת אתר תדמית אישי</h3>
+                        <p class="project-desc">צרו אתר Portfolio פשוט עם HTML, CSS ו-JavaScript בעזרת Claude Code</p>
+
+                        <div class="project-steps">
+                            <h4>השלבים:</h4>
+                            <ol class="numbered-list">
+                                <li>
+                                    <strong>צרו תיקייה חדשה</strong>
+                                    <p>צרו תיקייה בשם "my-portfolio" על שולחן העבודה</p>
+                                </li>
+                                <li>
+                                    <strong>פתחו טרמינל</strong>
+                                    <p>קליק ימני על התיקייה → "Open in Terminal"</p>
+                                </li>
+                                <li>
+                                    <strong>הפעילו את Claude</strong>
+                                    <div class="code-block">
+                                        <code>claude</code>
+                                        <button class="copy-btn" onclick="copyCode(this)">העתק</button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>בקשו ממנו ליצור את האתר</strong>
+                                    <div class="example-prompt large">
+"צור לי אתר Portfolio אישי עם הפרטים הבאים:
+- שם: [השם שלך]
+- תפקיד: [מה אתה עושה]
+- עיצוב מודרני וריספונסיבי
+- צבעים: כחול וסגול
+- קישורים לרשתות חברתיות
+- אזור יצירת קשר"
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>בקשו שיפורים</strong>
+                                    <div class="example-prompt">"הוסף אנימציות כשגוללים למטה"</div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="project-result">
+                            <h4>מה תקבלו:</h4>
+                            <ul class="result-list">
+                                <li>קובץ index.html</li>
+                                <li>קובץ styles.css</li>
+                                <li>קובץ script.js</li>
+                                <li>אתר מוכן לעליה לאוויר</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-number">פרויקט 2</span>
+                            <span class="project-difficulty medium">בינוני</span>
+                            <span class="project-tool cowork">Claude Cowork</span>
+                        </div>
+                        <h3>ניתוח וארגון הוצאות</h3>
+                        <p class="project-desc">השתמשו ב-Claude Cowork לניתוח קבלות ויצירת דוח הוצאות מסודר</p>
+
+                        <div class="project-steps">
+                            <h4>השלבים:</h4>
+                            <ol class="numbered-list">
+                                <li>
+                                    <strong>הכינו את הקבצים</strong>
+                                    <p>צרו תיקייה עם תמונות של קבלות או קובץ Excel עם הוצאות</p>
+                                </li>
+                                <li>
+                                    <strong>פתחו Cowork</strong>
+                                    <p>פתחו Claude Desktop ועברו ללשונית Cowork</p>
+                                </li>
+                                <li>
+                                    <strong>בחרו תיקייה ותארו את המשימה</strong>
+                                    <div class="example-prompt large">
+"נתח את כל ההוצאות בתיקייה הזו:
+1. קרא את כל הקבלות/קבצים
+2. מיין לפי קטגוריות (אוכל, תחבורה, ציוד)
+3. צור קובץ Excel מסודר עם:
+   - תאריך, סכום, קטגוריה, תיאור
+4. הוסף סיכום בסוף עם סך הכל לכל קטגוריה"
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="project-result">
+                            <h4>מה תקבלו:</h4>
+                            <ul class="result-list">
+                                <li>קובץ Excel מסודר</li>
+                                <li>סיכום לפי קטגוריות</li>
+                                <li>סכום כולל</li>
+                                <li>דוח מוכן להגשה</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-number">פרויקט 3</span>
+                            <span class="project-difficulty advanced">מתקדם</span>
+                            <span class="project-tool cli">Claude Code CLI</span>
+                        </div>
+                        <h3>בניית אפליקציית משימות (To-Do App)</h3>
+                        <p class="project-desc">בנו אפליקציית ווב מלאה לניהול משימות עם Claude Code - כולל אימון Claude עם CLAUDE.md</p>
+
+                        <div class="project-steps">
+                            <h4>השלבים:</h4>
+                            <ol class="numbered-list">
+                                <li>
+                                    <strong>צרו תיקיית פרויקט עם CLAUDE.md</strong>
+                                    <p>צרו תיקייה "todo-app" וקובץ CLAUDE.md:</p>
+                                    <div class="code-block multi-line">
+                                        <pre># To-Do App Project
+
+## תיאור
+אפליקציית ווב לניהול משימות בעברית
+
+## דרישות
+- ממשק נקי ומודרני
+- שמירה ב-LocalStorage
+- הוספה/מחיקה/סימון משימות
+- סינון לפי סטטוס
+
+## טכנולוגיות
+- HTML5, CSS3, Vanilla JavaScript
+
+## הנחיות
+- כתוב קוד נקי ומתועד
+- השתמש בעברית בממשק</pre>
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>בקשו את הפרויקט</strong>
+                                    <div class="example-prompt large">
+"קרא את קובץ CLAUDE.md ובנה את האפליקציה לפי הדרישות."
+                                    </div>
+                                </li>
+                                <li>
+                                    <strong>הוסיפו פיצ'רים</strong>
+                                    <div class="example-prompt">"הוסף תאריך יעד לכל משימה"</div>
+                                    <div class="example-prompt">"הוסף צלילים כשמסמנים משימה"</div>
+                                </li>
+                            </ol>
+                        </div>
+
+                        <div class="project-result">
+                            <h4>מה תקבלו:</h4>
+                            <ul class="result-list">
+                                <li>אפליקציה מלאה ועובדת</li>
+                                <li>קוד מסודר ומתועד</li>
+                                <li>ממשק בעברית</li>
+                                <li>שמירה מקומית</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Next Steps -->
+                    <div class="next-steps-section">
+                        <h3>מה הלאה?</h3>
+                        <div class="next-steps-grid">
+                            <div class="next-step-item">
+                                <span class="step-icon">🎓</span>
+                                <h4>העמיקו</h4>
+                                <p>נסו פרויקטים מורכבים יותר</p>
+                            </div>
+                            <div class="next-step-item">
+                                <span class="step-icon">🛠️</span>
+                                <h4>צרו Skills</h4>
+                                <p>בנו Skills משלכם לתהליכים שחוזרים</p>
+                            </div>
+                            <div class="next-step-item">
+                                <span class="step-icon">🔗</span>
+                                <h4>חברו שירותים</h4>
+                                <p>השתמשו ב-Connectors</p>
+                            </div>
+                            <div class="next-step-item">
+                                <span class="step-icon">🤝</span>
+                                <h4>שתפו</h4>
+                                <p>הצטרפו לקהילה ושתפו</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nav-buttons">
+                        <button class="nav-btn prev" onclick="switchTab('skills')">
+                            <span class="arrow">→</span>
+                            ל-Skills
+                        </button>
+                        <button class="nav-btn next primary" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                            חזרה להתחלה
+                            <span class="arrow">↑</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">AI</div>
+                <div class="brand-info">
+                    <h3>איי לוי</h3>
+                    <p>מומחה AI ואוטומציה</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <a href="#">אודות</a>
+                <a href="#">סדנאות</a>
+                <a href="#">בלוג</a>
+                <a href="#">צור קשר</a>
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-btn">LinkedIn</a>
+                <a href="#" class="social-btn">YouTube</a>
+                <a href="#" class="social-btn">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 איי לוי. כל הזכויות שמורות.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
